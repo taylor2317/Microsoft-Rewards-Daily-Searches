@@ -42,28 +42,19 @@ words = [
 ]
 
 search_interval = 5
-run_duration = 120
 
 print("Starting in 5 seconds. Switch to your browser window.")
 time.sleep(5)
 
-end_time = time.time() + run_duration
-index = 0
-
-while time.time() < end_time and index < len(words):
-    word = words[index]
-
-    # Focus address/search bar (Windows/Chrome/Edge)
+for word in words:
     pyautogui.hotkey('ctrl', 'l')
     time.sleep(0.5)
 
-    # Type and search
     pyautogui.write(word, interval=0.05)
     pyautogui.press('enter')
 
     print(f"Searching Bing for: {word}")
 
-    index += 1
     time.sleep(search_interval)
 
 print("Finished running searches.")
