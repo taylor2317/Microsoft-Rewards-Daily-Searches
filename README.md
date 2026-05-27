@@ -21,12 +21,12 @@ pip install pyautogui
 - Stops after the time limit or when the word list ends
 
 ## Setup Instructions
-1. Copy the script into a `.py` file (e.g., `search_bot.py`)
+1. Copy the script into a `.py` file (e.g., `bing_random_search.py`)
 2. Install dependencies using pip
 3. Open your browser (Chrome, Edge, etc.)
 4. Run the script:
 ```bash
-python search_bot.py
+python bing_random_search.py
 ```
 5. Switch to the browser within 5 seconds
 
