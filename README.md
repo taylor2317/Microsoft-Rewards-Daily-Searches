@@ -43,4 +43,3 @@ You can modify:
 
 ## Notes
 This script is intended for automation testing and input simulation in a controlled environment.
-```
